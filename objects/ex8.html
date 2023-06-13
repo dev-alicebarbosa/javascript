@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Objetos</h2>
+    <p>Deu errado porquê na linha 30 não foi adicionado o (), então por isso é retornado a definição da função</p>
+
+    <p id="demo"></p>
+
+    <script>
+        // Cria um objeto
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        // Mostra algum dado do objeto
+        document.getElementById("demo").innerHTML = person.fullName;
+
+    </script>
+
+</body>
+
+</html>

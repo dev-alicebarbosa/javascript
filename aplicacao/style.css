@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    font-size: 19px;
+}
+h1{
+    font-size: 50px;
+    color: #0a0091;
+}
+
+fieldset{
+    font-size: 20px;
+    border: 3px #221a91 solid;
+    color: #8e86ff;
+}
+input{
+    border: 3px #8e86ff solid;
+}
+button{
+    padding: 10px;
+    color: #8e86ff;
+    background-color: #07024e;
+    border: 3px #8e86ff solid;
+}
+button:hover{
+    padding: 10px;
+    color: #07024e;
+    background-color: #8e86ff;
+    border: 3px #07024e solid;
+}

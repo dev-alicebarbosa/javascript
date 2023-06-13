@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aplication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        Tabuada
+    </h1>
+    <fieldset>
+        <legend>Digite de qual numero gostaria de ver a tabuada</legend>
+        <div>
+            <input type="number" name="n1" id="n1">
+            <div id="show"></div>
+        </div>
+
+    </fieldset>
+
+
+    <div>
+        <button id="btn"> Mostrar</button>
+    </div>
+    <script>
+        btn = document.getElementById("btn")
+        s = document.getElementById("show")
+        btn.addEventListener("click", function () {
+            numero = document.getElementById("n1").value
+            const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 10];
+            numbers.forEach(myFunction)
+            s.innerHTML = `<h5>A tabuada do ${numero}: </h5>`;
+            s.innerHTML += numbers;
+
+            function myFunction(item, index, arr) {
+                arr[index] = `<p>${item} X ${numero} = ${item * numero}</p>`
+
+            }
+
+        })
+
+    </script>
+
+</body>
+
+</html>

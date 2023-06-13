@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+
+    <p>Chame uma função que transforma de Fahrenheit para Calsius: (p.s. errado, pois não é adicionado o (), na linha 20, então mostra a função toda, não apenas o valor)</p>
+<p id="demo"></p>
+
+<script>
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+let value = toCelsius;
+document.getElementById("demo").innerHTML = value;
+</script>
+
+</body>
+
+</html>
